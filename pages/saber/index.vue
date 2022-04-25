@@ -1,5 +1,9 @@
+<script lang="ts" setup>
+import Button from "./button.md";
+</script>
+
 <template>
   <div>
-      1211113
+    <Button />
   </div>
 </template>
