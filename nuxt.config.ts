@@ -1,5 +1,6 @@
 import { defineNuxtConfig } from "nuxt";
 import vuePlugin from "@vitejs/plugin-vue";
+import path from "path";
 // import vueJsxPlugin from "@vitejs/plugin-vue-jsx";
 // import { mdPlugin } from "./vite-plugins/mdPlugin";
 import Markdown from "vite-plugin-md";
@@ -7,7 +8,11 @@ import Markdown from "vite-plugin-md";
 export default defineNuxtConfig({
   css: [
     '@arco-design/web-vue/es/style/index.less'
-  ], 
+  ],
+  alias: {
+    // 解决 esm 的问题
+    'compute-scroll-into-view': path.join(__dirname, './node_modules/compute-scroll-into-view/dist/index.js'),
+  }, 
   extensions: [".js", ".jsx", ".mjs", ".ts", ".tsx", ".vue", ".md"],
   vite: {
     plugins: [

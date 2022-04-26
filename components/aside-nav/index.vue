@@ -4,7 +4,7 @@
     @transitionstart="handleTranslationStart"
     @transitionend="handleTranslationEnd"
   >
-    <nav class="aside-nav">
+    <!-- <nav class="aside-nav">
       <div class="aside-nav-header">
         <div class="type-radio-group">
           <a class="type-radio-button" href="/react/docs/start">React</a>
@@ -102,7 +102,7 @@
     >
       <icon-left v-if="show" />
       <icon-right v-else />
-    </a-button>
+    </a-button> -->
   </aside>
 </template>
 

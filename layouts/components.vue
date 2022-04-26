@@ -12,7 +12,7 @@ import { useRoute } from 'vue-router';
 import { Button } from '@arco-design/web-vue';
 import { PageDurationTracker, teaLog } from '@arco-design/arco-site-utils';
 import { collapseInjectionKey } from '../context';
-// import AsideNav from './components/aside-nav/index.vue';
+import AsideNav from '#components/aside-nav/index.vue';
 import { getLocalStorage, setLocalStorage } from '../utils/local-storage';
 // import ThemeBox from './components/theme-box/index.vue';
 
@@ -20,7 +20,7 @@ export default defineComponent({
   name: 'App',
   components: {
     AButton: Button,
-    // AsideNav,
+    AsideNav,
     // ThemeBox,
   },
   props: {
@@ -104,7 +104,7 @@ export default defineComponent({
       ]"
     >
       <a-button>ssss</a-button>
-      <!-- <a-alert
+      <a-alert
         v-if="showGlobalNotice"
         class="site-global-notice"
         :show-icon="false"
@@ -125,8 +125,8 @@ export default defineComponent({
             <icon-right />
           </b>
         </a>
-      </a-alert> -->
-      <!-- <aside-nav :show="showNav" @button-click="toggleNav" /> -->
+      </a-alert>
+      <aside-nav :show="showNav" @button-click="toggleNav" />
       <slot />
     </div>
   </div>
