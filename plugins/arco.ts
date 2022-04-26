@@ -10,9 +10,9 @@ import CellCode from '#components/cell-code/index.vue';
 export default defineNuxtPlugin(nuxtApp => {
   nuxtApp.vueApp.use(ArcoVue);
   nuxtApp.vueApp.use(ArcoVueIcon);
-  nuxtApp.vueApp.component(CodeBlock.name, CodeBlock);
-  nuxtApp.vueApp.component(CellDemo.name, CellDemo);
-  nuxtApp.vueApp.component(CellCode.name, CellCode);
-  nuxtApp.vueApp.component(AnchorHead.name, AnchorHead);
-  nuxtApp.vueApp.component(ArcoArticle.name, ArcoArticle);
+//   nuxtApp.vueApp.component(CodeBlock.name, CodeBlock);
+//   nuxtApp.vueApp.component(CellDemo.name, CellDemo);
+//   nuxtApp.vueApp.component(CellCode.name, CellCode);
+//   nuxtApp.vueApp.component(AnchorHead.name, AnchorHead);
+//   nuxtApp.vueApp.component(ArcoArticle.name, ArcoArticle);
 })

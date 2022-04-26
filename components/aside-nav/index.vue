@@ -4,13 +4,13 @@
     @transitionstart="handleTranslationStart"
     @transitionend="handleTranslationEnd"
   >
-    <!-- <nav class="aside-nav">
-      <div class="aside-nav-header">
+    <nav class="aside-nav">
+      <!-- <div class="aside-nav-header">
         <div class="type-radio-group">
           <a class="type-radio-button" href="/react/docs/start">React</a>
           <a class="type-radio-button type-radio-button-active">Vue</a>
         </div>
-      </div>
+      </div> -->
       <div v-show="showNav" class="aside-nav-body">
         <template v-for="group in docsMenuList" :key="group.name">
           <div class="aside-nav-group">
@@ -102,15 +102,17 @@
     >
       <icon-left v-if="show" />
       <icon-right v-else />
-    </a-button> -->
+    </a-button>
   </aside>
 </template>
 
 <script>
 import { computed, defineComponent, ref } from 'vue';
 import { useI18n } from 'vue-i18n';
-import { componentMenu, docsMenuList } from '../../router';
+// import { componentMenu, docsMenuList } from '../../router';
 
+const componentMenu = [];
+const docsMenuList = [];
 export default defineComponent({
   name: 'AsideNav',
   props: {
@@ -157,4 +159,6 @@ export default defineComponent({
 });
 </script>
 
-<!-- <style scoped lang="less" src="./style.less" /> -->
+<style scoped lang="less" >
+  @import './style.less';
+</style>
