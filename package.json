@@ -10,6 +10,7 @@
     "@types/marked": "^4.0.3",
     "@types/prismjs": "^1.26.0",
     "@types/yaml-front-matter": "^4.1.0",
+    "less": "^4.1.2",
     "marked": "^4.0.14",
     "nuxt": "3.0.0-rc.1",
     "parse5": "^7.0.0",
@@ -17,5 +18,9 @@
     "remark": "^13.0.0",
     "vite-plugin-md": "^0.12.4",
     "yaml-front-matter": "^4.1.1"
+  },
+  "dependencies": {
+    "@arco-design/arco-site-utils": "^1.0.2",
+    "@arco-design/web-vue": "^2.25.0"
   }
 }

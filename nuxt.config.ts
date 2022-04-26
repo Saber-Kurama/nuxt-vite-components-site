@@ -5,6 +5,9 @@ import vuePlugin from "@vitejs/plugin-vue";
 import Markdown from "vite-plugin-md";
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
+  css: [
+    '@arco-design/web-vue/es/style/index.less'
+  ], 
   extensions: [".js", ".jsx", ".mjs", ".ts", ".tsx", ".vue", ".md"],
   vite: {
     plugins: [
