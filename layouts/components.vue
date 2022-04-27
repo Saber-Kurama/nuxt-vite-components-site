@@ -103,7 +103,6 @@ export default defineComponent({
         { 'arco-vue-body-has-notice': showGlobalNotice },
       ]"
     >
-      <a-button>ssss</a-button>
       <a-alert
         v-if="showGlobalNotice"
         class="site-global-notice"

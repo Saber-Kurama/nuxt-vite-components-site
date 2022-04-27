@@ -111,7 +111,17 @@ import { computed, defineComponent, ref } from 'vue';
 import { useI18n } from 'vue-i18n';
 // import { componentMenu, docsMenuList } from '../../router';
 
-const componentMenu = [];
+const componentMenu = [
+  {
+    name: '业务组件',
+    list: [
+      {
+        name: 'button',
+        path: '/component/button'
+      }
+    ]
+  }
+];
 const docsMenuList = [];
 export default defineComponent({
   name: 'AsideNav',
