@@ -3,8 +3,9 @@ import vuePlugin from "@vitejs/plugin-vue";
 import path from "path";
 // import vueJsxPlugin from "@vitejs/plugin-vue-jsx";
 // import { mdPlugin } from "./vite-plugins/mdPlugin";
-import Markdown from "vite-plugin-md";
-// import vueDocs from './vite-plugins/vite-plugin-arco-vue-docs/src/index';
+// import Markdown from "vite-plugin-md";
+// import Markdown from './vite-plugins/vite-plugin-md/src/index';
+import vueDocs from './vite-plugins/vite-plugin-arco-vue-docs/src/index';
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
   css: [
@@ -22,8 +23,8 @@ export default defineNuxtConfig({
       vuePlugin({ include: [/\.md$/] }),
       // vueJsxPlugin({ enableObjectSlots: false }),
       // mdPlugin(),
-      Markdown(),
-      // vueDocs(), 
+      // Markdown(),
+      vueDocs(), 
     ],
   },
 });

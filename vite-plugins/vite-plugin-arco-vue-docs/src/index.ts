@@ -37,7 +37,7 @@ export default function vueMdPlugin(): Plugin {
       if (!id.endsWith('.md')) {
         return null;
       }
-      console.log('??>>>>', id)
+      // console.log('??>>>>', id)
       if (!vuePlugin) {
         return this.error('Not found plugin [vite:vue]');
       }
@@ -56,8 +56,14 @@ export default function vueMdPlugin(): Plugin {
         ? transformDemo(tokens, id, frontMatter)
         : transformMain(tokens, id, frontMatter);
      
-      console.log('vueCode', vueCode)
-      return vuePlugin.transform?.call(this, vueCode, getVueId(id));
+      // console.log('vueCode', vueCode)
+      const html = `
+        <template>123123123</template>
+      `
+      return {
+        code: html
+      }
+      // return vuePlugin.transform?.call(this, vueCode, getVueId(id));
     },
 
     async handleHotUpdate(ctx) {
