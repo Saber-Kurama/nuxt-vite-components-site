@@ -35,7 +35,7 @@ export default defineNuxtConfig({
       exclude: ["fsevents"],
     },
   },
-  css: ["~/assets/css/main.css"],
+  css: ["~/assets/css/index.less"],
   postcss: {
     plugins: {
       tailwindcss: {},

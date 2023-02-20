@@ -2,6 +2,8 @@ lockfileVersion: 5.4
 
 specifiers:
   '@arco-design/web-vue': ^2.43.1
+  '@arco-themes/vue-digitforce': ^0.0.46
+  '@dangojs/digitforce-ui': ^0.0.21
   '@dangojs/tailwind-preset-digitforce': ^0.1.2
   '@nuxt/content': ^2.4.3
   autoprefixer: ^10.4.13
@@ -15,6 +17,8 @@ specifiers:
 
 dependencies:
   '@arco-design/web-vue': 2.43.1_vue@3.2.47
+  '@arco-themes/vue-digitforce': 0.0.46_pomaak4kpvna3eobgup5kms4ka
+  '@dangojs/digitforce-ui': 0.0.21_pomaak4kpvna3eobgup5kms4ka
   vue: 3.2.47
 
 devDependencies:
@@ -62,6 +66,14 @@ packages:
       resize-observer-polyfill: 1.5.1
       scroll-into-view-if-needed: 2.2.31
       vue: 3.2.47
+    dev: false
+
+  /@arco-themes/vue-digitforce/0.0.46_pomaak4kpvna3eobgup5kms4ka:
+    resolution: {integrity: sha512-vqFV1wS+jaU+lFZSdx1rzJgLgoLLu4L0qwm8646tkAXOptbnkV8e2rYqNYb4RKreCKBm5asbN4OrAzeI8m83Wg==}
+    peerDependencies:
+      '@arco-design/web-vue': ^2.43.0
+    dependencies:
+      '@arco-design/web-vue': 2.43.1_vue@3.2.47
     dev: false
 
   /@babel/code-frame/7.18.6:
@@ -364,6 +376,24 @@ packages:
     dependencies:
       mime: 3.0.0
     dev: true
+
+  /@dangojs/digitforce-ui-utils/0.0.7:
+    resolution: {integrity: sha512-CuV2x6R2PA17oae1kHheg10PQ8cXbhPT1TJBLRK3OBWtBP0BI0O/Q33JQaIb8BpcUplquIo1ZsI5pfZrg31atg==}
+    dependencies:
+      lodash: 4.17.21
+      vue: 3.2.47
+    dev: false
+
+  /@dangojs/digitforce-ui/0.0.21_pomaak4kpvna3eobgup5kms4ka:
+    resolution: {integrity: sha512-mATtLAEtf+MgnGvkvVNuPNsGnXUiTXiIcupl9OKiwnOzh1yyjC8kbU2Wn7x3hJMtCxSyQSFnz6Xn4ishdOm7Qw==}
+    peerDependencies:
+      '@arco-design/web-vue': ^2.41.0
+      '@dangojs/digitforce-icons-vue': ^0.0.66
+      '@vueuse/core': ^9.12.0
+    dependencies:
+      '@arco-design/web-vue': 2.43.1_vue@3.2.47
+      '@dangojs/digitforce-ui-utils': 0.0.7
+    dev: false
 
   /@dangojs/tailwind-preset-digitforce/0.1.2:
     resolution: {integrity: sha512-Xasj042lGkirrCT6yZDjfLVccEzhtW+uAA+9sHpxzSZoUE7j798wtKfEjyw8aR1zSbOy/rq4vUWb33LpXxJz7w==}
@@ -3516,7 +3546,6 @@ packages:
 
   /lodash/4.17.21:
     resolution: {integrity: sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==}
-    dev: true
 
   /log-symbols/5.1.0:
     resolution: {integrity: sha512-l0x2DvrW294C9uDCoQe1VSU4gf529FkSZ6leBl4TiqZH/e+0R7hSfHQBNut2mNygDgHwvYHfFLn6Oxb3VWj2rA==}

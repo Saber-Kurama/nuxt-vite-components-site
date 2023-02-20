@@ -52,6 +52,9 @@ import { IconSoundFill, IconClose } from "@arco-design/web-vue/es/icon";
     background: rgba(0, 0, 0, 0.05);
     margin-right: 20px;
     transition: all 0.25s ease;
+    svg {
+      font-size: 16px;
+    }
   }
   .conBtn {
     display: flex;
